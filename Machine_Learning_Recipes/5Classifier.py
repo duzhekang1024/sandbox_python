@@ -47,7 +47,8 @@ class ScrappyKNN():
 #from sklearn.neighbors import KNeighborsClassifier
 #my_classifier = KNeighborsClassifier()
 my_classifier = ScrappyKNN()
-
+#my_classifier = learn.DNNClassifier(feature_columns, hidden_units = [10, 20, 10], n_classes = 3)
+   
 my_classifier.fit(X_train, y_train)
 
 predictions = my_classifier.predict(X_test)
